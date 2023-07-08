@@ -6,11 +6,11 @@ import java.util.List;
 public class Prateleira {
     private String localizacao;
 
+    private List<Livro> livros = new ArrayList<>();
+
     public Prateleira(String localizacao) {
         this.localizacao = localizacao;
     }
-
-    private List<Livro> livros = new ArrayList<>();
 
     public String getLocalizacao() {
         return localizacao;
@@ -18,10 +18,6 @@ public class Prateleira {
 
     public List<Livro> getLivros() {
         return livros;
-    }
-
-    public void setLocalizacao(String localizacao) {
-        this.localizacao = localizacao;
     }
 
     public void addLivro(Livro livro){
